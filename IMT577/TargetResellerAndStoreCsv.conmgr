@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0"?>
 <DTS:ConnectionManager xmlns:DTS="www.microsoft.com/SqlServer/Dts"
-  DTS:ObjectName="TargetDataChannelResellerAndStore.csv"
-  DTS:DTSID="{3D433A20-1665-481D-A2B6-D73FFE5956BD}"
-  DTS:Description="to connect Source csv files"
+  DTS:ObjectName="TargetResellerAndStoreCsv"
+  DTS:DTSID="{87E068C2-764A-413A-A796-DA93BF3ABA48}"
   DTS:CreationName="FLATFILE">
   <DTS:ObjectData>
     <DTS:ConnectionManager
@@ -13,7 +12,7 @@
       DTS:RowDelimiter=""
       DTS:TextQualifier="_x003C_none_x003E_"
       DTS:CodePage="1252"
-      DTS:ConnectionString="C:\Users\imt577user\Desktop\Data\Target Data - Channel Reseller and Store.csv">
+      DTS:ConnectionString="C:\Users\imt577user\Desktop\Target Data - Channel Reseller and Store.csv">
       <DTS:FlatFileColumns>
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -22,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{72D0419A-EB32-4EA9-AF52-724D6A391CEC}"
+          DTS:DTSID="{E78B8F0F-7E29-4CAD-B214-0D52719A761A}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -31,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ChannelName"
-          DTS:DTSID="{9B984BEB-68E2-465F-977F-A556187BCFFF}"
+          DTS:DTSID="{82B56608-6417-4EC7-AB0B-1C6A792C326B}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -40,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="TargetName"
-          DTS:DTSID="{26F4AD39-F8AF-4114-AAA2-ABEABC8EBDBE}"
+          DTS:DTSID="{3AA9A244-082B-4522-9A88-104ACA2346AB}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -49,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName=" TargetSalesAmount "
-          DTS:DTSID="{4A9273E0-FFC2-470A-BAE2-FA1246A99E0B}"
+          DTS:DTSID="{4A998608-EC64-4645-84B8-1594C1250430}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>

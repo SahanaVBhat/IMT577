@@ -26,7 +26,7 @@
           <SSIS:Property SSIS:Name="CreatorComputerName">ML-RefVm-765087</SSIS:Property>
           <SSIS:Property SSIS:Name="Description">
           </SSIS:Property>
-          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwYc9cag84EmDEg74nYz3VgAAAAACAAAAAAAQZgAAAAEAACAAAAApHynKMJPeM6JZCjWIgSZE0/yG9OwLCc6/zracNIEOCgAAAAAOgAAAAAIAACAAAAC4xKcoEIUEGmmriLWwH9SdLJORfXBF0dl+LgAdak7QpJAAAABRSfsGyh2q2BMtf8Mh/bUFcNYpPyjHigTQDTfUDTYRy+O6wD5R+g3mgcSH2LW1NtWEtDXSmC18Fq91SaT5yUZDsfW2yOaBESizzNXhJYWjCzYwWiP15wrBx9bZRuFTWV64X8kUS6b/GxaXGlmvb5xp00Lawa1ATxy/HOqGP3MvpAPSCz0x8tqO0yGGneQm1utAAAAAQQdGiPr9/kKP+2QaK+onSU0laTgf2lNq5R0+H8VWbhzTc5s7ul85LjINHEcZ1L3sj90yxIGhr/7zn8vfjcWmPg==</SSIS:Property>
+          <SSIS:Property SSIS:Name="PasswordVerifier" SSIS:Sensitive="1">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwYc9cag84EmDEg74nYz3VgAAAAACAAAAAAAQZgAAAAEAACAAAAAOHboqG6tWB96/dK5FtwYi7XeTczwrz8ZWq1pJCpEhUAAAAAAOgAAAAAIAACAAAADvj0yY9kZ3Iv83eT68yA0g4FrcBzN5nDDZL38fenpcNpAAAAC2xuemOeFtvFGxrRmiiTCyCXqexNBPQO77lFnMmnEWe9Ov7w3w+yy4pM/ue+tsUAj+etrfycxYMs1N+n+KW7nxXt9GMORgaH1N3XgPcHp+zsHJ4IvbvrsAXrIVRAPX8iZD/r3aWa+l1wHPJ1ne6VcPj2iNNUfdSRCk144H7rv6pD/UpYYbNQ2Vhz0nPahXyCpAAAAA+7k+i5zcuJOpvrWJoKp5cGN++p3TjM5jSYfCVKt0ppgRP7EojPtG6LgNypWrI95I2CVTkuo0tfZfCFlKk3W0oQ==</SSIS:Property>
           <SSIS:Property SSIS:Name="FormatVersion">1</SSIS:Property>
         </SSIS:Properties>
         <SSIS:Packages>
@@ -34,8 +34,8 @@
         </SSIS:Packages>
         <SSIS:ConnectionManagers>
           <SSIS:ConnectionManager SSIS:Name="ML-RefVm-765087.DestinationSystem.sa.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="TargetDataProduct.csv.conmgr" />
-          <SSIS:ConnectionManager SSIS:Name="TargetDataChannelResellerAndStore.csv.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="TargetResellerAndStoreCsv.conmgr" />
+          <SSIS:ConnectionManager SSIS:Name="TargetProductCsv.conmgr" />
         </SSIS:ConnectionManagers>
         <SSIS:DeploymentInfo>
           <SSIS:ProjectConnectionParameters>
@@ -158,7 +158,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.AlwaysCheckForRowDelimiters">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.AlwaysCheckForRowDelimiters">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -173,7 +173,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.CodePage">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.CodePage">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -188,7 +188,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.ColumnNamesInFirstDataRow">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.ColumnNamesInFirstDataRow">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -203,7 +203,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -218,7 +218,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -229,11 +229,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\imt577user\Desktop\Data\Target Data - Product.csv</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">C:\Users\imt577user\Desktop\Target Data - Channel Reseller and Store.csv</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.DataRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.DataRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -248,7 +248,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.Format">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.Format">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -263,7 +263,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.HeaderRowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.HeaderRowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -278,7 +278,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.HeaderRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.HeaderRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -293,7 +293,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.LocaleID">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.LocaleID">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -308,7 +308,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.RowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.RowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -322,7 +322,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.TextQualifier">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.TextQualifier">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -337,7 +337,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataProduct.csv.Unicode">
+            <SSIS:Parameter SSIS:Name="CM.TargetResellerAndStoreCsv.Unicode">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -352,7 +352,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.AlwaysCheckForRowDelimiters">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.AlwaysCheckForRowDelimiters">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -367,7 +367,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.CodePage">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.CodePage">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -382,7 +382,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.ColumnNamesInFirstDataRow">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.ColumnNamesInFirstDataRow">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -397,7 +397,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.ConnectByProxy">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.ConnectByProxy">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -412,7 +412,7 @@
                 <SSIS:Property SSIS:Name="DataType">3</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.ConnectionString">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.ConnectionString">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -423,11 +423,11 @@
                 <SSIS:Property SSIS:Name="IncludeInDebugDump">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Required">0</SSIS:Property>
                 <SSIS:Property SSIS:Name="Sensitive">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="Value">C:\Users\imt577user\Desktop\Data\Target Data - Channel Reseller and Store.csv</SSIS:Property>
+                <SSIS:Property SSIS:Name="Value">C:\Users\imt577user\Desktop\Target Data - Product.csv</SSIS:Property>
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.DataRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.DataRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -442,7 +442,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.Format">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.Format">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -457,7 +457,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.HeaderRowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.HeaderRowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -472,7 +472,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.HeaderRowsToSkip">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.HeaderRowsToSkip">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -487,7 +487,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.LocaleID">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.LocaleID">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -502,7 +502,7 @@
                 <SSIS:Property SSIS:Name="DataType">9</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.RowDelimiter">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.RowDelimiter">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -516,7 +516,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.TextQualifier">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.TextQualifier">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -531,7 +531,7 @@
                 <SSIS:Property SSIS:Name="DataType">18</SSIS:Property>
               </SSIS:Properties>
             </SSIS:Parameter>
-            <SSIS:Parameter SSIS:Name="CM.TargetDataChannelResellerAndStore.csv.Unicode">
+            <SSIS:Parameter SSIS:Name="CM.TargetProductCsv.Unicode">
               <SSIS:Properties>
                 <SSIS:Property SSIS:Name="ID">
                 </SSIS:Property>
@@ -554,10 +554,10 @@
                 <SSIS:Property SSIS:Name="Name">Package</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMajor">1</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionMinor">0</SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionBuild">5</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionBuild">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="VersionComments">
                 </SSIS:Property>
-                <SSIS:Property SSIS:Name="VersionGUID">{27438972-45B2-4C89-9A96-C52789381B97}</SSIS:Property>
+                <SSIS:Property SSIS:Name="VersionGUID">{681325EE-C0F9-4381-9DE6-8B7DE0325CDE}</SSIS:Property>
                 <SSIS:Property SSIS:Name="PackageFormatVersion">8</SSIS:Property>
                 <SSIS:Property SSIS:Name="Description">
                 </SSIS:Property>
