@@ -21,7 +21,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="Year"
-          DTS:DTSID="{E78B8F0F-7E29-4CAD-B214-0D52719A761A}"
+          DTS:DTSID="{0C9F8DD1-A8A8-45D6-9D8A-524BE6D154CA}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -30,7 +30,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="ChannelName"
-          DTS:DTSID="{82B56608-6417-4EC7-AB0B-1C6A792C326B}"
+          DTS:DTSID="{210CD8CA-31D9-4493-9574-BD00875AA205}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -39,7 +39,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName="TargetName"
-          DTS:DTSID="{3AA9A244-082B-4522-9A88-104ACA2346AB}"
+          DTS:DTSID="{AC672F9B-D989-46E9-95EE-FF379B66F923}"
           DTS:CreationName="" />
         <DTS:FlatFileColumn
           DTS:ColumnType="Delimited"
@@ -48,7 +48,7 @@
           DTS:DataType="129"
           DTS:TextQualified="True"
           DTS:ObjectName=" TargetSalesAmount "
-          DTS:DTSID="{4A998608-EC64-4645-84B8-1594C1250430}"
+          DTS:DTSID="{D7AED791-622C-4682-A339-A86268823E83}"
           DTS:CreationName="" />
       </DTS:FlatFileColumns>
     </DTS:ConnectionManager>
